@@ -1,13 +1,13 @@
 # spring-stream
 Spring cloud stream with Kafka consumer
 
-#Get things together
-1. Kafka
+# Get things together
+- Kafka
 
 Download Kafka from https://kafka.apache.org/downloads
 
 tar -xzf kafka_2.11-0.11.0.0.tgz
-> cd kafka_2.11-0.11.0.0
+cd kafka_2.11-0.11.0.0
 
 Start zookeeper
 bin/zookeeper-server-start.sh config/zookeeper.properties
@@ -20,20 +20,18 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
 
 ..Wait to send messages..
 
-2. Clone the project
+- Clone the project
 git clone https://github.com/najus/spring-stream.git
 
 # How to build
-gradle clean
-gradle assemble
-gradle build
 
-#Run
+- gradle clean
+- gradle assemble
+- gradle build
+
+# Run
+
 - Run the main class
 - Start zookeeper
-
-3. Now send message through terminal
-
+- Now send messages through terminal
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
-
-4. Make money
