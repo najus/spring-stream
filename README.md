@@ -1,4 +1,4 @@
-# spring-stream
+# Spring-cloud-stream
 Spring cloud stream with Kafka consumer
 
 # Get things together
@@ -23,7 +23,7 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
 - Clone the project
 git clone https://github.com/najus/spring-stream.git
 
-# How to build
+# Clean/build
 
 - gradle clean
 - gradle assemble
